@@ -1,0 +1,85 @@
+.skills{
+    padding-top: 93px;
+    &__subtitle{
+        position: relative;
+        text-align: center;
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+            top: -26%;
+        }
+    }
+    &__title{
+        text-align: center;
+    }
+    &__gwrapper{
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: 270px;
+        gap: 13px;
+    }
+    &__item{
+        padding: 0px 30px 25px 30px;
+        display: grid;
+        grid-template-rows: 115px 36px 94px;
+        border: 1px solid black;
+    }
+    &__pic{
+        padding-top: 30px;
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__progress-gwrapper{
+        padding-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 45px;
+        row-gap: 30px;
+    }
+    &__progress-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__progress-name{
+        position: relative;
+        padding-left: 13px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        @include before_circle;
+        span{
+            font-weight: 500;
+        }
+        &::before{
+            top: 3%;
+        }
+    }
+    &__progress-line{
+        position: relative;
+        height: 14px;
+        width: 100%;
+        background-color: #E8E4DE;
+        border-radius: 4px;
+        span{
+            display: block;
+            height: 100%;
+            background-color: $main-color;
+            border-radius: 4px;
+        }
+    }
+}

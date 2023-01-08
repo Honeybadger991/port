@@ -1,0 +1,19 @@
+.promo{
+    min-height: 100vh;
+    position: relative;
+    background-color: grey;
+    padding-top: 206px;
+    &__title{
+        width: 532px;
+    }
+    &__subtitle{
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+    }
+    &__buttons{
+        display: flex;
+        margin-top: 25px;
+        gap: 44px;
+    }
+}
